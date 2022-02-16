@@ -95,12 +95,13 @@ a.skip{
   transition: left 1s ease-out;
   z-index: 1;
   /* Requirement 3 code here*/
-  margin: 0 0 0 -500px;
+  position: absolute;
+  left: -500px;
   
 }
-a.skip:focus{
+/* a.skip:focus{
   margin: 0 0 0 0;
-}
+} */
 
 /* Requirement 4 code here*/
 a.skip:focus, nav a:focus{
@@ -114,7 +115,7 @@ a.skip:focus, nav a:focus{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   row-gap: 30px;
-  position: relative;
+  /* position: relative; */
 }
 
 /* Requirements 6-10 here: */
@@ -188,8 +189,10 @@ img {
   }
   /* Requirements 12-15 here: */
   a.skip:focus{
-    position: fixed;
-    top: 20px;
+    /* position: fixed;
+    top: 20px; */
+    margin-top: 20px;
+    left: 0;
   }
 
   .container{
