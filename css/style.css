@@ -26,8 +26,8 @@ h2{
 
 nav{
   background-color: #ddd;
-  padding: 25px 10px;;    
-  text-align: left;   
+  padding: 25px 10px;
+  text-align: left;
 }
 
 nav a{
@@ -130,14 +130,13 @@ a.skip:focus, nav a:focus{
 
 .about, .clients, .method, .contact{
   grid-column: 2 / 3;
-  position: absolute;
+  /* position: absolute;
   z-index: 2;
   vertical-align: middle;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
-
+  transform: translate(-50%, -50%); */
 }
 
 img {
@@ -148,30 +147,30 @@ img {
   grid-column: 1 / span 3;
   max-height: 500px;
   overflow: hidden;
-  position:relative;
-  z-index: 1;
+  /* position:relative;
+  z-index: 1; */
 
 }
 
-.about{
-  grid-row: 1/span 1;
+.about-image, .about{
+  grid-row: 1;
 }
 
-.clients{
-  grid-row: 2/span 1;
+.clients-image, .clients{
+  grid-row: 2;
 }
 
-.method{
-  grid-row: 3/span 1;
+.method-image, .method{
+  grid-row: 3;
 }
 
-.contact{
-  grid-row: 4/span 1;
+.contact-image, .contact{
+  grid-row: 4;
 }
 
-.txt{
+/* .txt{
 
-}
+} */
 
 
 
@@ -214,7 +213,7 @@ img {
 
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
-   *************************************** 
+   ***************************************
    */
 @media screen and (prefers-reduced-motion: reduce){
   /*Turn off scroll*/
